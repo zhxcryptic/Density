@@ -74,7 +74,12 @@ public class Density {
     private static void setDefault(@NonNull Activity activity) {
         float targetDensity = 0;
         try {
-            targetDensity = sAppDisplayMetrics.widthPixels / WIDTH;
+              if(activity.getResources().getConfiguration().orientation
+                    == Configuration.ORIENTATION_LANDSCAPE){
+                targetDensity = sAppDisplayMetrics.heightPixels / WIDTH;
+            }else {
+                targetDensity = sAppDisplayMetrics.widthPixels / WIDTH;
+            }
         } catch (NumberFormatException e) {
             e.printStackTrace();
         }
