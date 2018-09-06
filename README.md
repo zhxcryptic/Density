@@ -11,4 +11,4 @@
      * 最后高度的话 也是对照宽度来的 所以高度是不会和手机的高度相同的 所以需要使用一个ScrollView包容</br>
      * 有些页面只是超出一点点 也会滑动 那就手动将某些控件的高度或者留白减少一点</br>
      * 毕竟设计图只是设计图 设计说不行 我一般总会说一句 重做安卓的图 要720*1280的 全部哦</br>
-![Alt text](https://github.com/zhxcryptic/Density/blob/master/screenshot/setting.png "设置图")</br>
+
